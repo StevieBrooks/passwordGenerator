@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .outer-shell {
+            width: 50%;
+            height: 400px;
+            background: linear-gradient(135deg, black, darkblue, silver, darkblue, black);
+            margin: auto;
+            border: 5px groove black;
+            border-radius: 20px;
+        }
+        .display {
+            width: 60%;
+            height: 60%;
+            background: lightgrey;
+            margin: 5rem auto;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+        button {
+            position: relative;
+            bottom: 3rem;
+            left: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="outer-shell">
+        <div class="display"></div>
+        <button class="button">Push for Password</button>
+    </div>
+    <script src="passGen.js"></script>
+</body>
+</html>
