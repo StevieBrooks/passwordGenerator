@@ -19,3 +19,13 @@ function genFunc() {
     let sI3 = Math.floor(Math.random() * symArr.length);
     display.innerHTML = `${lettersArr[lI1]}${numsArr[nI2]}${symArr[sI2]}${lettersArr[lI3].toUpperCase()}${lettersArr[lI2]}${symArr[sI3]}${numsArr[nI3]}${numsArr[nI1]}`;
 }
+
+button.addEventListener('mousedown', scaleUp);
+function scaleUp() {
+    button.style.scale = '1.02';
+}
+
+button.addEventListener('mouseup', scaleDown);
+function scaleDown() {
+    button.style.scale = '1';
+}
